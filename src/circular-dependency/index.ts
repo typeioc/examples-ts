@@ -10,15 +10,15 @@ class B {
     constructor(private a){}
 }
 
-builder.register(A)
+builder.register('Service A')
 .as((c) => {
-    const b = c.resolve(B);
+    const b = c.resolve('Service B');
     return new A(b);
 });
 
-builder.register(B)
+builder.register('Service B')
 .as((c) => {
-    const a = c.resolve(A);
+    const a = c.resolve('Service A');
     return new B(a);
 });
 
@@ -26,9 +26,9 @@ const container = builder.build();
 
 const result = () => {
     try {
-        container.resolve(A);
+        container.resolve('Service A');
     } catch (error) {
-        return error.message.replace('\n', ' ');
+        return error.message
     }
 }
 
