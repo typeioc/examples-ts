@@ -1,0 +1,8 @@
+{
+  "name": "tioc-lazy-resolution-ts",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "typeioc": "^2.1.8"
+  }
+}
