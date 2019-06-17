@@ -1,8 +1,14 @@
 {
-  "name": "tioc-lazy-resolution-ts",
-  "version": "0.0.0",
-  "private": true,
+  "name": "typeioc-examples-ts",
+  "version": "0.0.1",
+  "scripts": {
+    "test": "tap src/**/*.test.ts"
+  },
   "dependencies": {
     "typeioc": "^2.1.8"
+  },
+  "devDependencies": {
+    "@types/node": "12.0.8",
+    "tap": "14.2.3"
   }
 }

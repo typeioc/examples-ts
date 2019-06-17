@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+      "module": "commonjs",
+      "target": "es2015",
+      "experimentalDecorators" : true,
+      "emitDecoratorMetadata" : true
+    },
+    "include": [
+      "node_modules/typeioc/d.ts/typeioc.d.ts",
+      "node_modules/typeioc/d.ts/typeioc.addons.d.ts",
+      "src/**/*.ts",
+      "index.ts"
+    ]
+  }
