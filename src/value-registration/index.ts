@@ -17,6 +17,6 @@ builder.register('service')
 });
 
 const container = builder.build();
-const service = container.resolve('service');
+const service = container.resolve<string>('service');
 
 export default service;
