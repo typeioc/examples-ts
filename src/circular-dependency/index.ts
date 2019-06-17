@@ -28,7 +28,7 @@ const result = () => {
     try {
         container.resolve(A);
     } catch (error) {
-        return error.message;
+        return error.message.replace('\n', ' ');
     }
 }
 
