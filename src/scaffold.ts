@@ -6,7 +6,7 @@ export const createExampleElement = (index: number, name: string, value: string)
   description.innerText = `${index}. ${name}`
   description.style.paddingRight = '20px'
   description.style.display = 'inline-block'
-  description.style.width = '200px'
+  description.style.width = '250px'
 
   const result = document.createElement('span')
   result.innerText = ''
