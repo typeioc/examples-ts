@@ -15,7 +15,7 @@ class NotSoSimpleClass {
     }
 }
 
-const builder = typeioc.createBuilder();
+const builder = typeioc.builder()
 builder.register(NotSoSimpleClass)
 .as(() => new NotSoSimpleClass());
 

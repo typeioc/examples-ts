@@ -1,6 +1,6 @@
 import * as typeioc from 'typeioc';
 
-const builder = typeioc.createBuilder();
+const builder = typeioc.builder();
 builder.register('A')
 .as((_c, value) => ({ a: value }));
 

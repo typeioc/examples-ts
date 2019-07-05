@@ -2,10 +2,10 @@
   "name": "typeioc-examples-ts",
   "version": "0.0.1",
   "scripts": {
-    "test": "tap src/**/*.test.ts"
+    "test": "tap --no-coverage src/**/*.test.ts"
   },
   "dependencies": {
-    "typeioc": "^2.1.8"
+    "typeioc": "^3.0.0"
   },
   "devDependencies": {
     "@types/node": "12.0.8",

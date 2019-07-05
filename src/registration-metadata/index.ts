@@ -17,7 +17,7 @@ const create = (): ICreate => ({
     }
 });
 
-const builder = typeioc.createBuilder();
+const builder = typeioc.builder();
 builder.register<ICreate>('ServiceA')
     .as(() => create())
     .initializeBy((_c, item) => {
@@ -26,8 +26,7 @@ builder.register<ICreate>('ServiceA')
      })
     .dispose((item) => item.cleanup())
     .named('A')
-    .transient()
-    .ownedInternally();
+    .transient();
 
 const container = builder.build();
 container.resolveNamed<ICreate>('ServiceA', 'A');

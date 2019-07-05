@@ -1,6 +1,6 @@
-import * as typeioc from 'typeioc';
+import  { builder as createBuilder, IContainer } from 'typeioc';
 
-const builder = typeioc.createBuilder();
+const builder = createBuilder();
 
 interface IFib {
     value: number;
@@ -8,7 +8,7 @@ interface IFib {
 }
 
 builder.register('F')
-.as((c: Typeioc.IContainer, h, n) => {
+.as((c: IContainer, h, n) => {
     const a = c.resolve<() => IFib>('F', n, h + n);
 
     return {

@@ -1,6 +1,6 @@
 import * as typeioc from 'typeioc';
 
-const decorator = typeioc.createDecorator();
+const decorator = typeioc.decorator();
 
 interface IFib {
     value: number;

@@ -6,7 +6,7 @@ const create = (data: string) => ({
     }
 });
 
-const builder = typeioc.createBuilder();
+const builder = typeioc.builder();
 builder.register(1).asValue('A');
 builder.register(2).asValue('B');
 builder.register('service')

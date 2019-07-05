@@ -23,7 +23,7 @@ const substitute = (value: string) => ({
     name: value
 });
 
-const builder = typeioc.createBuilder();
+const builder = typeioc.builder();
 builder.register(ABase).asType(A);
 builder.register('B1').asType(B, ABase);
 builder.register('B2').as((c) => new B(c.resolve(ABase)));

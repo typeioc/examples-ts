@@ -35,7 +35,7 @@ class CClass extends CClassBase {
     }
 }
 
-const builder = typeioc.createBuilder();
+const builder = typeioc.builder();
 builder.register('A Class')
     .as(() => new AClass());
 

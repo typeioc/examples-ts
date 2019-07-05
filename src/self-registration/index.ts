@@ -16,7 +16,7 @@ class B {
     }
 }
 
-const builder = typeioc.createBuilder();
+const builder = typeioc.builder();
 builder.register(A).asSelf();
 builder.register(B).asSelf(A);
 

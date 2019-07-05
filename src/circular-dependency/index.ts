@@ -1,6 +1,6 @@
 import * as typeioc from 'typeioc';
 
-const builder = typeioc.createBuilder();
+const builder = typeioc.builder();
 
 class A {
     constructor(private b){}

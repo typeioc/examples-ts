@@ -20,7 +20,7 @@ const create = () => {
     return { };
 };
 
-const builder = typeioc.createBuilder();
+const builder = typeioc.builder();
 builder.register('create')
 .as(() => create());
 
