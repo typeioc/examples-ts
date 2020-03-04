@@ -5,10 +5,10 @@
     "test": "tap --no-coverage src/**/*.test.ts"
   },
   "dependencies": {
-    "typeioc": "^3.0.2"
+    "typeioc": "^3.0.3"
   },
   "devDependencies": {
-    "@types/node": "13.1.1",
-    "tap": "14.10.5"
+    "@types/node": "13.7.7",
+    "tap": "14.10.6"
   }
 }
