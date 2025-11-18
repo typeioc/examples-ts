@@ -9,6 +9,6 @@
   },
   "devDependencies": {
     "@types/node": "13.7.7",
-    "tap": "18.5.2"
+    "tap": "21.1.3"
   }
 }
